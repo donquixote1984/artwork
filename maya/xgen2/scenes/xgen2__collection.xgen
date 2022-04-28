@@ -1,0 +1,217 @@
+# XGen Palette File
+#
+# Version:  C:/Program Files/Autodesk/Maya2020/plug-ins/xgen/
+# Author:   w'g'x
+# Date:     Sat Jul 17 22:09:27 2021
+
+FileVersion 18
+
+Palette
+	name			collection
+	parent			
+	xgDataPath		${PROJECT}xgen/collections/collection
+	xgProjectPath		C:/Users/wgx/home/mayaprojs/xgen2/
+	xgDogTag		
+	endAttrs
+
+Description
+	name			description
+	flipNormals		false
+	strayPercentage		0.0
+	lodFlag			false
+	averageWidth		1.0
+	pixelCullSize		0.0
+	pixelFadeSize		20.0
+	cullFade		0.1
+	minDensity		0.01
+	cullWidthRatio		0.01
+	maxWidthRatio		20.0
+	groom			
+	descriptionId		0
+	xgDataPath		${PROJECT}xgen/collections/collection/
+	xgProjectPath		C:/Users/wgx/home/mayaprojs/xgen2/
+	endAttrs
+
+RendermanRenderer
+	percent			100.0
+	startPercent		0.0
+	inCameraOnly		false
+	inCameraMargin		0.0
+	length_XP		true
+	width_XP		true
+	T_XP			false
+	stray_XP		false
+	id_XP			false
+	descid_XP		false
+	ri_XP			true
+	rf_XP			true
+	u_XS			true
+	v_XS			true
+	faceid_XS		true
+	geomid_XS		false
+	geomName_XS		true
+	P_XS			true
+	Pref_XS			false
+	Pg_XS			false
+	Prefg_XS		false
+	N_XS			true
+	Ng_XS			false
+	Nref_XS			false
+	Nrefg_XS		false
+	dPdu_XS			true
+	dPduref_XS		false
+	dPdug_XS		false
+	dPdurefg_XS		false
+	dPdv_XS			true
+	dPdvref_XS		false
+	dPdvg_XS		false
+	dPdvrefg_XS		false
+	renderer		None
+	renderMethod		2
+	draMode			0
+	primitiveBound		1.0
+	custom__arnold_rendermode	0
+	custom__arnold_curveMode	0
+	custom__arnold_minPixelWidth	0.0
+	custom__arnold_motion_blur	0
+	custom__arnold_motion_blur_mode	1
+	custom__arnold_motion_blur_steps	2
+	custom__arnold_motion_blur_factor	0.5
+	custom__arnold_useAuxRenderPatch	0
+	custom__arnold_auxRenderPatch	0
+	custom__arnold_multithreading	0
+	endAttrs
+
+SplinePrimitive
+	_patchNames		
+	length			$a=1.0000;#0.05,5.0\n$a
+	width			$a=0.0150;#0.005,0.5\n$a
+	depth			$a=1.0;#0.05,5.0\n$a
+	offU			$a=0.0000;#-2.0,2.0\n$a
+	offV			$a=0.0000;#-2.0,2.0\n$a
+	offN			$a=0.0000;#-180.0,180.0\n$a
+	aboutN			$a=0.0000;#-180.0,180.0\n$a
+	regionMap		${DESC}/Region/
+	regionMask		0.0
+	iMethod			1
+	useCache		false
+	liveMode		true
+	_wireNames		
+	cacheFileName		${DESC}/guides.abc
+	attrCVCount		3
+	bendParam[0]		$a=0.5000;#0.0,1.0\n$a
+	bendU[0]		$a=0.0000;#-2.0,2.0\n$a
+	bendV[0]		$a=0.0000;#-2.0,2.0\n$a
+	fxCVCount		5
+	uniformCVs		true
+	taper			$a=0.0000;#-1.0,1.0\n$a
+	taperStart		$a=0.0000;#0.0,1.0\n$a
+	displayWidth		true
+	faceCamera		true
+	tubeShade		true
+	tubes			
+	guideSpacing		1.0
+	guideMask		1.0
+	cutParam		1.0
+	texelsPerUnit		10.0
+	CVFrequency		1.0
+	widthRamp		rampUI(0.0,1.0,1:1.0,1.0,1)
+	endAttrs
+
+RandomGenerator
+	displacement		$a=0.0000;#-1.0,1.0\n$a
+	vectorDisplacement	0
+	bump			$a=0.0000;#-1.0,1.0\n$a
+	offset			$a=0.0000;#-1.0,1.0\n$a
+	cullFlag		false
+	cullBackface		false
+	cullFrustrum		false
+	cullAngleBF		0.0
+	cullAngleF		0.0
+	cullExpr		$a=0.0000;#0.0,1.0\n$a
+	density			1000.0
+	mask			1.0 # map('${DESC}/density/')
+	dcFlag			false
+	scFlag			true
+	usePoints		false
+	pointDir		${DESC}/Points/
+	ptLength		1.0
+	endAttrs
+
+GLRenderer
+	percent			100.0
+	startPercent		0.0
+	inCameraOnly		true
+	inCameraMargin		0.0
+	patchNames		false
+	faceIds			false
+	primIDs			false
+	primIDsAt		1.0
+	vertices		false
+	poly			false
+	culled			false
+	unitCube		false
+	color			$a=[0,0,0];#color\n$a
+	guideColor		$a=[1.0,0.4313725,0.0];#color\n$a
+	TEXCOORD3		[ $cWidth, 0, 0 ]  # red channel reserved by XGen
+	TEXCOORD4		
+	TEXCOORD5		
+	TEXCOORD6		
+	TEXCOORD7		
+	splineSegments		2
+	primNumLimit		100000000
+	endAttrs
+
+	Active	SplinePrimitive
+	Active	RandomGenerator
+	Active	RendermanRenderer
+	Preview	GLRenderer
+
+Patches	description	5
+Patch	Subd
+	name		polySurface2
+	faceIds		200	 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199
+	animCurves	0	
+Guides	Spline	5
+	id			1
+	loc			7.5326782464981079e-01 4.5410960912704468e-01 97
+	blend			0.0000000000000000e+00
+	interp			9.1447752073305866e-01:4.8834919912657354e-01:1.1104680601798145e-02:4.1386175841868472e-01:1.0419494852131888e+00:9.1446837595785135e-01:3.9256241281024105e+00
+	CVs			4
+	2.9611243628456151e-02 3.1376318179947732e-01 1.0753983687282745e-01
+	2.2208434496632817e-02 6.2361132646010498e-01 2.3202005886541757e-01
+	1.4230066350596232e-02 9.3136189906034483e-01 3.5896465585934534e-01
+	id			2
+	loc			7.6458901166915894e-01 2.0493100583553314e-01 79
+	blend			0.0000000000000000e+00
+	interp			6.5316675306910243e-01:6.5316022140157182e-01:1.5011422435973198e-04:4.6788695272787395e-01:9.0200037877276107e-01:4.1386175841868472e-01:3.4278094557351197e+00
+	CVs			4
+	4.3829441496306965e-08 3.3300008309119306e-01 -9.7753900279995420e-08
+	8.8578529663929650e-08 6.6700008309117109e-01 -2.1000935138126842e-07
+	1.3319363830963105e-07 1.0000000830911500e+00 -3.2192870824676589e-07
+	id			3
+	loc			6.3940592110157013e-02 3.6091572046279907e-01 62
+	blend			0.0000000000000000e+00
+	interp			1.0079753171561641e+00:4.6788695272787395e-01:2.0482826809627026e+00:6.4407839358196339e-01:2.9949631794963656e+00:1.0079653171561640e+00:3.1316680065656763e+00
+	CVs			4
+	4.3848311565997097e-02 3.2530459960543751e-01 5.6064667421018510e-02
+	1.8725525275105923e-01 6.2460448780109834e-01 9.3614982280004422e-02
+	1.7417963883109441e-01 9.5203685448085362e-01 1.5282708890618718e-01
+	id			4
+	loc			4.6487700939178467e-01 1.1460600048303604e-01 109
+	blend			0.0000000000000000e+00
+	interp			1.0079753171561641e+00:1.0079653171561640e+00:2.6947244630534501e+00:5.1165917981709819e-01:2.9991308874076599e+00:9.1446837595785135e-01:3.1083785779144431e+00
+	CVs			4
+	2.2290833731471241e-03 3.3298645796212589e-01 2.0124614661751919e-03
+	-6.3856169507562593e-02 6.5471933960209783e-01 -5.8623272415196118e-02
+	-9.6707727655741593e-02 9.8471730222473253e-01 -8.8808033340985637e-02
+	id			5
+	loc			7.0219498872756958e-01 1.0214500129222870e-01 142
+	blend			0.0000000000000000e+00
+	interp			6.5316675306910243e-01:4.8834919912657354e-01:3.2451390179234429e-01:5.1165917981709819e-01:1.9975397459091040e+00:6.4407839358196339e-01:3.3947570988851630e+00:6.5316022140157182e-01:3.9887702152708280e+00
+	CVs			4
+	7.6572536153726584e-03 3.2629135869756465e-01 -6.6062967738113432e-02
+	-2.8170187061316816e-02 6.5546663434634878e-01 -1.0983547504698582e-01
+	-4.2519964474735689e-02 9.7969504932116924e-01 -1.8439430290191144e-01
+endObject
+endPatches
